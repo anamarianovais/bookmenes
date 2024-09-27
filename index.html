@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMenes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f3ec;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #800080;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #8B4513;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .cta-button {
+            background-color: #800080;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+        .info {
+            background-color: #fff;
+            border: 1px solid #8B4513;
+        }
+        .category-button {
+            background-color: #8B4513;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .category-button:hover {
+            background-color: #800080;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #800080;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bem-vindo ao BookMenes!</h1>
+    <h2>Descubra novos mundos, um livro por vez.</h2>
+    <button class="cta-button">Assine Agora</button>
+</header>
+
+<nav>
+    <a href="#como-funciona">Como Funciona</a>
+    <a href="#categorias">Categorias</a>
+    <a href="#assinaturas">Assinaturas</a>
+    <a href="#sorteios">Sorteios</a>
+    <a href="#blog">Blog</a>
+    <a href="#sobre">Sobre Nós</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<section id="como-funciona" class="info">
+    <h2>Como Funciona</h2>
+    <ol>
+        <li>Escolha sua categoria favorita (Ficção, Não-Ficção, etc.).</li>
+        <li>Receba um livro surpresa todo mês na sua casa.</li>
+        <li>Participe de sorteios exclusivos e ganhe prêmios literários!</li>
+    </ol>
+</section>
+
+<section id="categorias" class="info">
+    <h2>Categorias de Livros</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 20px; justify-items: center;">
+        <div>
+        </div>
+        <div>
+            <button class="category-button" onclick="alert('Você escolheu Não-Ficção!')">Não-Ficção</button>
+            <img src="https://i0.wp.com/matheusdesouza.com/wp-content/uploads/2021/02/sapiens-livro.jpg?resize=150%2C216&ssl=1" alt="Não-Ficção" style="width: 100%; max-width: 150px; border-radius: 5px;">
+        </div>
+        <div>
+            <button class="category-button" onclick="alert('Você escolheu Fantasia!')">Fantasia</button>
+            <img src="https://m.media-amazon.com/images/I/817k8+2zzaL._AC_UF1000,1000_QL80_.jpg" alt="Fantasia" style="width: 100%; max-width: 150px; border-radius: 5px;">
+        </div>
+        <div>
+            <button class="category-button" onclick="alert('Você escolheu Romance!')">Romance</button>
+            <img src="https://http2.mlstatic.com/D_NQ_NP_892749-MLB45354364292_032021-O.webp" style="width: 100%; max-width: 150px; border-radius: 5px;">
+        </div>
+        <div>
+            <button class="category-button" onclick="alert('Você escolheu Mistério!')">Mistério</button>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXW2lu4pxfQEqr5cdpSeiGbvwopVqHtv-B8w&s" alt="Mistério" style="width: 100%; max-width: 150px; border-radius: 5px;">
+        </div>
+        <div>
+            <button class="category-button" onclick="alert('Você escolheu Autoajuda!')">Autoajuda</button>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8sZrwqc2cFR15W0sSKDODAVR4Vtff9-3i3g&s" style="width: 100%; max-width: 150px; border-radius: 5px;">
+        </div>
+        <div>
+            <button class="category-button" onclick="alert('Você escolheu Jovem Adulto!')">Terror</button>
+            <img src="https://midias.correiobraziliense.com.br/_midias/jpg/2023/10/26/640x853/1_07_a_assombracao_da_casa_da_colina_livro_livros_de_terror_reproducao_site_amazon-30466429.jpg?20231026171609?20231026171609" style="width: 100%; max-width: 150px; border-radius: 5px;">
+        </div>
+    </div>
+</section>
+
+<section id="assinaturas" class="info">
+    <h2>Assinaturas</h2>
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+        <div style="border: 1px solid #8B4513; border-radius: 5px; padding: 20px; margin: 10px; width: 30%; background-color: #fff;">
+            <h3>Plano Mensal</h3>
+            <p><strong>R$15,99/mês</strong></p>
+            <p>Receba um livro surpresa todo mês.</p>
+            <button class="cta-button">Assinar Agora</button>
+        </div>
+        
+        <div style="border: 1px solid #8B4513; border-radius: 5px; padding: 20px; margin: 10px; width: 30%; background-color: #fff;">
+            <h3>Plano Semestral</h3>
+            <p><strong>R$29,99/mês</strong> (10% de desconto)</p>
+            <p>Um livro por mês + descontos especiais.</p>
+            <button class="cta-button">Assinar Agora</button>
+        </div>
+
+        <div style="border: 1px solid #8B4513; border-radius: 5px; padding: 20px; margin: 10px; width: 30%; background-color: #fff;">
+            <h3>Plano Anual</h3>
+            <p><strong>R$49,99/mês</strong> (20% de desconto + brinde exclusivo)</p>
+            <p>5 livro por mês e brindes especiais a cada seis meses!</p>
+            <button class="cta-button">Assinar Agora</button>
+        </div>
+    </div>
+</section>
+
+<section id="sorteios" class="info">
+    <h2>Sorteios</h2>
+    <p>Participe de nossos sorteios mensais e ganhe prêmios literários incríveis!</p>
+    <button class="cta-button">Inscreva-se nos Sorteios</button>
+</section>
+
+<section id="blog" class="info">
+    <h2>Blog</h2>
+    <p>Dicas de leitura, resenhas de livros, entrevistas com autores e muito mais!</p>
+</section>
+
+<section id="sobre" class="info">
+    <h2>Sobre Nós</h2>
+    <p>Nossa missão é promover a leitura e conectar leitores apaixonados.</p>
+</section>
+
+<section id="contato" class="info">
+    <h2>Contato</h2>
+    <p>Email: contato@bookmenes.com</p>
+    <p>Redes sociais:@bookmenes.</p>
+</section>
+
+<footer>
+    <p>Copyright ©️ 2024 BookMenes</p>
+    <p><a href="#sobre" style="color: white;">Termos de Serviço</a> | <a href="#sobre" style="color: white;">Política de Privacidade</a></p>
+</footer>
+
+</body>
+</html>
